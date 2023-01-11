@@ -132,7 +132,7 @@ class PSO:                                                              # class 
 
                 for i in range(len(self.cities)):                               # the length of cities list to see the updated values below the for loop
                     if new_route[i] != gbest[i]:                                # if new_route[i] is not equals to particle.pbest[i]
-                        swap = (i, gbest.index(new_route[i]), self.gbest_probability) # # swap in terms of the index of gbest particle which include new route and gbest probability
+                        swap = (i, gbest.index(new_route[i]), self.gbest_probability) # swap in terms of the index of gbest particle which include new route and gbest probability
                         temp_velocity.append(swap)                              # applying swappping in the temporary velocity of the particle
                         gbest[swap[0]], gbest[swap[1]] = gbest[swap[1]], gbest[swap[0]] # gbest[swap[0]]=gbest[swap[1]]
 
