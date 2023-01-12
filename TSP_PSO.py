@@ -148,7 +148,7 @@ class PSO:                                                              # class 
                 particle.update_costs_and_pbest()                              # updating the which is most cheapest and effective in the travelling salesman problem
 
 if __name__ == "__main__":                                                     # to store code that should only run when the file is executed as a script
-    cities = read_cities(1024)                                                   # travel total number of 64 cities by the salesman according to their respective size of the city
+    cities = read_cities(64)                                                   # travel total number of 64 cities by the salesman according to their respective size of the city
     pso = PSO(iterations=1200, population_size=300, pbest_probability=0.9, gbest_probability=0.02, cities=cities)  # creates a PSO instance with these values
     pso.run()                # to run the PSO algorithm
     print(f'cost: {pso.gbest.pbest_cost}\t| gbest: {pso.gbest.pbest}')         # to create an f-string by showing the global best particle
