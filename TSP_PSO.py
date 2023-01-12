@@ -1,4 +1,4 @@
-## The Traveling Salesman Problem (TSP) refers to the challenge of determining the shortest yet most efficient route for a travelling salesman to take to visit a list of specific destinations / cities ##
+## The Travelling Salesman Problem (TSP) refers to the challenge of determining the shortest yet most efficient route for a travelling salesman to take to visit a list of specific destinations / cities ##
 import random                      # import random module for random data generation
 import math                        # import math module to use mathematical functions esp to calculate cost
 import matplotlib.pyplot as plt    # import matplotlib.pyplot module to make matplotlib works like MATLAB
