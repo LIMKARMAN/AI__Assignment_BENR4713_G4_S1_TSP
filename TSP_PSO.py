@@ -102,7 +102,7 @@ class PSO:                                                              # class 
                 x_list, y_list = [], []                                         # create empty list for  x_list and y_list  which is not null, it's just empty
                 for city in self.gbest.pbest:                                   # iterate using for to find city in self.gbest.pbest
                     x_list.append(city.x)                                       # for x_list we append() is the list method for adding  city.x to the end of x_list
-                    y_list.append(city.y)                                       # for y_list we append() is the list method for adding  city.x to the end of y_list
+                    y_list.append(city.y)                                       # for y_list we append() is the list method for adding  city.y to the end of y_list
                 x_list.append(pso.gbest.pbest[0].x)                             # x_list is the name given to the list, then .append() is the list method for adding an item to the end of pso.gbest.pbest[0].x is the specified item that we want to add
                 y_list.append(pso.gbest.pbest[0].y)                             # y_list is the name given to the list, then .append() is the list method for adding an item to the end of pso.gbest.pbest[0].y is the specified item that we want to add
                 fig = plt.figure(1)                                             # figure 1 is created
