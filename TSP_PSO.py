@@ -87,7 +87,7 @@ class PSO:                                                              # class 
 
     def run(self):                                                              # run all the attributes and methods with self
         self.gbest = min(self.particles, key=lambda p: p.pbest_cost)            # to take the minimum cost to start from a particular one and returning to the same destination
-        print(f"initial cost is {self.gbest.pbest_cost}")                       # print out the initial cost required by the traveling salesman to complete the journey 
+        print(f"initial cost is {self.gbest.pbest_cost}")                       # print out the initial cost required by the travelling salesman to complete the journey 
         plt.ion()                                                               # turn interactive mode on
         plt.draw()                                                              # to redraw the current figure
         for t in range(self.iterations):                                        # time recorded in the range of iterations
